@@ -122,13 +122,12 @@
     data: () => ({
       dialog: false,
       items: [
-        {text: 'Спорт', icon: 'mdi-printer-pos-wrench-outline', category: '1'},
+        {text: 'Спорт', icon: 'mdi-account', category: '1'},
         {text: 'Море', icon: 'mdi-nature', category: '1'},
         {text: 'Природа', icon: 'mdi-map-marker', category: '2'},
         {text: 'Прогулка', icon: 'mdi-weather-sunny-alert', category: '3'},
         {text: 'Активный образ', icon: 'mdi-account', category: '1'},
         {text: 'Автомобили', icon: 'mdi-nature', category: '1'},
-
         {text: 'Nature', icon: 'mdi-menu', category: '1'},
         {
           text: 'Nightlife',
@@ -185,7 +184,7 @@
 
         setTimeout(() => {
           this.search = ''
-          this.selected = []
+          // this.selected = []
           this.loading = false
           this.dialog = false
         }, 2000)
