@@ -1,18 +1,9 @@
 <template>
-  <!-- <v-app>
-    <v-main class="container">
-
-      <v-container>
-        <router-view />
-      </v-container>
-    </v-main>
-  </v-app> -->
-
-  <v-layout>
-      <v-app-bar class="pl-10"  >
+  <v-app >
+    <v-app-bar class="pl-10"  >
        <img src="https://cms2.russpass.ru/media/icons/logomst.svg" alt="" srcset="" width="150" height="150"> 
        <v-btn size="large">
-          <v-icon size="large">mdi-hamburger</v-icon>
+          <v-icon size="large">mdi-menu</v-icon>
           Меню
         </v-btn>
         <v-btn size="large">
@@ -41,16 +32,16 @@
           Вход
         </v-btn>
       </v-app-bar>
-      <v-main style="min-height: 300px;">
-        <v-container>
+      
+      <v-main >
+        <v-container style="max-height: 1440px;">
           <router-view />
-
         
-          <!-- <Footer /> -->
+          <Footer />
           
         </v-container>
       </v-main>
-    </v-layout>
+    </v-app>
     
 </template>
 
@@ -79,6 +70,6 @@ export default {
   /* display: flex; */
   /* justify-content: center; */
   /* max-width: 1440px; */
-	background: #FAEFDB;
+	/* background: #FAEFDB; */
 }
 </style>

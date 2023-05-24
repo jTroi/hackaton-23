@@ -58,10 +58,10 @@
         <v-row >
             <v-col class="d-flex justify-center" cols="12">
               <v-btn
-                class="w-50 ma-5"
-                color="rgba(245,223,184,.5)"
+                class="btnPlan ma-5"
+                color="#F5F5F5"
               >
-                Показать ещё
+                Спланировать самостоятельно
               </v-btn>
             </v-col>
           </v-row>
@@ -96,10 +96,13 @@ padding: 30px;
   align-items: center;
   border: 2px solid rgba(245, 223, 184, 0.5);
   border-radius: 12px;
-  font-size: 16px;
+  font-size: 14px;
   /* margin: 8px; */
 }
 .bs:hover{
   background-color: #FAEFDB;
+}
+.btnPlan{
+  min-width: 50%
 }
 </style>
