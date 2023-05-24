@@ -9,7 +9,7 @@ const routes = [
   {
     path: '/',
     name: 'preferences',
-    component: () => import("../pages/Preferences.vue")
+    component: () => import("../pages/MainPage.vue")
   },
   {
     path: '/Login',

@@ -1,9 +1,8 @@
 <template>
-      <UserPreferencesModal />
     <v-container>
-      <h2>Рекомендуем для вас</h2>
-      <div class="recomendation">
-        <v-row class="d-flex justify-center mx-15">
+      <h2>Путешествия по России начинаются здесь!</h2>
+      <div class="recomendation elevation-5">
+        <v-row class="d-flex justify-center mx-10">
           <v-col class="d-flex justify-center" cols="lg-3 md-3 sm-3 xs-10">
             <v-btn class="bs">
               <img class="logo" src="../assets/icons/Buttons/Sun.svg">
@@ -30,29 +29,28 @@
           </v-col>
         </v-row>
         <v-row>
-          <v-col cols="lg-3 md-4 sm-8 xs-10">
-            <RecomendationCard>
-              <template #title> Top 10 Московских пляжей</template>
-              <template #describe> Очень крутые пляжи найдете только у нас</template>
-            </RecomendationCard>
-          </v-col>
-          <v-col cols="lg-3 md-4 sm-8 xs-10">
-            <RecomendationCard>
-              <template #title> Lorem ipsum dolor sit amet.</template>
-              <template #describe> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, fugit.</template>
-            </RecomendationCard>
-          </v-col>
-          <v-col cols="lg-3 md-4 sm-8 xs-10">
-            <RecomendationCard>
-              <template #title> Lorem ipsum dolor sit amet.</template>
-              <template #describe> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, fugit.</template>
-            </RecomendationCard>
-          </v-col>
-          <v-col cols="lg-3 md-4 sm-8 xs-10">
-            <RecomendationCard>
-              <template #title> Lorem ipsum dolor sit amet.</template>
-              <template #describe> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, fugit.</template>
-            </RecomendationCard>
+          <v-col
+            cols="lg-3 md-8 sm-8 xs-10"
+            v-for="item in imgSource"
+            :key="item"
+            >
+            <v-card
+              class="mx-auto"
+              max-width="288"
+              min-width="250"
+              rounded="xl"
+            >
+              <v-img
+                class="text-white"
+                :src= item.url
+                min-height="348"
+                cover
+              >
+                <v-card-title class="mt-2">
+                  {{ item.title }}
+                </v-card-title>
+              </v-img>
+            </v-card>
           </v-col>
         </v-row>
         <v-row >
@@ -75,7 +73,16 @@ import UserPreferencesModal from '@/components/UserPreferencesModal.vue';
 
 
 export default {
-  components: { UserPreferencesModal, RecomendationCard }
+  components: { UserPreferencesModal, RecomendationCard },
+  data: () => ({
+    imgSource: [
+      {title:'Text Name Carad', url: "src/assets/recommendations/1.jpg"},
+      {title:'Text Name Carad3', url: "src/assets/recommendations/2.jpg"},
+      {title:'Text Name Carad3', url: "src/assets/recommendations/3.jpg"},
+      {title:'Text Name Carad3', url: "src/assets/recommendations/4.jpg"},
+
+    ]
+  })
 }
 </script>
 
