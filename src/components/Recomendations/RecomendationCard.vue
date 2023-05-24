@@ -22,9 +22,6 @@
     <v-card-text>
       <slot name="describe"></slot>
 
-      <div>Whitehaven Beach</div>
-
-      <div>Whitsunday Island, Whitsunday Islands</div>
     </v-card-text>
 
     <v-card-actions>

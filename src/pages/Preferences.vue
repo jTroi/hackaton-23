@@ -3,23 +3,31 @@
     <v-container>
       <h2>Рекомендуем для вас</h2>
       <div class="recomendation">
-        <v-row class="d-flex justify-center btnSeason">
-          <v-btn class="bs" size="large">
-          <img src="@/assets/icons/Buttons/Sun.svg" alt="Summer">
-          Летний сезон
-        </v-btn>
-        <v-btn class="ml-8 bs" size="large">
-          <img src="@/assets/icons/Buttons/Rainbow.svg" alt="Rainbow">
-          Осенний сезон
-        </v-btn>
-        <v-btn class="ml-8 bs" size="large">
-          <img src="@/assets/icons/Buttons/Winter.svg" alt="Winter">
-          Зимний сезон
-        </v-btn>
-        <v-btn class="ml-8 bs" size="large">
-          <img src="@/assets/icons/Buttons/Spring.svg" alt="Spring">
-          Весенний сезон
-        </v-btn>
+        <v-row class="d-flex justify-center mx-15">
+          <v-col class="d-flex justify-center" cols="lg-3 md-3 sm-3 xs-10">
+            <v-btn class="bs">
+              <img class="logo" src="../assets/icons/Buttons/Sun.svg">
+            Летний сезон
+            </v-btn>
+          </v-col>
+          <v-col class="d-flex justify-center" cols="lg-3 md-3 sm-3 xs-10">
+            <v-btn class="bs">
+              <img class="logo" src="../assets/icons/Buttons/Rainbow.svg">
+            Осенний сезон
+            </v-btn>
+          </v-col>
+          <v-col class="d-flex justify-center" cols="lg-3 md-3 sm-3 xs-10"> 
+            <v-btn class="bs">
+            <img class="logo" src="../assets/icons/Buttons/Winter.svg">
+            Зимний сезон
+            </v-btn>
+          </v-col>
+          <v-col class="d-flex justify-center" cols="lg-3 md-3 sm-3 xs-10">
+            <v-btn class="bs">
+              <img class="logo" src="../assets/icons/Buttons/Spring.svg">
+            Весенний сезон
+            </v-btn>
+          </v-col>
         </v-row>
         <v-row>
           <v-col cols="lg-3 md-4 sm-8 xs-10">
@@ -46,22 +54,19 @@
               <template #describe> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, fugit.</template>
             </RecomendationCard>
           </v-col>
-          <v-row>
-            <v-btn
-              class="mx-auto ma-5"
-              width="60%"
-              color="amber-accent-3"
-
-            >
-              Показать ещё
-            </v-btn>
-          </v-row>
         </v-row>
+        <v-row >
+            <v-col class="d-flex justify-center" cols="12">
+              <v-btn
+                class="w-50 ma-5"
+                color="rgba(245,223,184,.5)"
+              >
+                Показать ещё
+              </v-btn>
+            </v-col>
+          </v-row>
       </div>
     </v-container>
-    
-
-
 </template>
 
 <script>
@@ -83,20 +88,18 @@ border-radius: 3em;
 margin-top: 5px;
 padding: 30px;
 }
-.btnSeason{
-  margin: 0 auto;
-}
+
 .bs{
-  min-width: 174px;
+  min-width: 230px;
   min-height: 48px;
   background-color: white;
   align-items: center;
   border: 2px solid rgba(245, 223, 184, 0.5);
   border-radius: 12px;
   font-size: 16px;
+  /* margin: 8px; */
 }
 .bs:hover{
   background-color: #FAEFDB;
 }
-
 </style>

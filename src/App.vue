@@ -46,7 +46,7 @@
           <router-view />
 
         
-          <Footer />
+          <!-- <Footer /> -->
           
         </v-container>
       </v-main>
@@ -57,7 +57,6 @@
 <script>
 import Header from "@/components/Header.vue"
 import Footer from "./components/Footer.vue"
-import flag from "@/assets/icons/header/rus_flag.svg"
 
 export default {
   components: { Header, Footer },
