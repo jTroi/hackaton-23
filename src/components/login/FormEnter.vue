@@ -1,5 +1,13 @@
 <template>
-  <v-card class="my-5 mx-auto px-6 py-8" max-width="455">
+  <v-card v-modal= dialog class="my-5 mx-auto px-6 py-8" max-width="455">
+    <template v-slot:activator="{ props }">
+            <v-btn
+              v-bind="props"
+            >
+            <v-icon>mdi-account</v-icon>
+              Вход
+            </v-btn>
+          </template>
       <v-form
         v-model="form"
         @submit.prevent="onSubmit"

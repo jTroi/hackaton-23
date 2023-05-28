@@ -67,7 +67,7 @@
   max-width: 1224px;
 }
 .footer{
- max-width: 1440px;
+ /* max-width: 1440px; */
  max-height: 320px;
 }
 .elementFooter{

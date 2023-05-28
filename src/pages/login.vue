@@ -1,11 +1,13 @@
 <template>
-  <FormEnter />
+  <!-- <FormEnter /> -->
+  <Sign />
 </template>
 
 <script>
-import FormEnter from '@/components/login/formEnter';
+import Sign from '@/components/Login/Sign.vue';
+import FormEnter from '@/components/login/FormEnter';
 
   export default {
-    components: { FormEnter }
+    components: { FormEnter, Sign }
 }
 </script>
